@@ -15,7 +15,7 @@ void print_to_98(int n)
 		z = n - 98;
 		for (i = 0; i < z; i++)
 		{
-			_putchar(n - i);
+			printf("%d",n - i);
 			printf(" ,");
 		}
 		printf("98\n");
@@ -27,7 +27,7 @@ void print_to_98(int n)
 		z = 98 - n;
 		for (i = 0; i < z; i++)
 		{
-			_putchar(n + i);
+			printf("%d",n + i);
 			printf(" ,");
 		}
 		printf("98\n");
