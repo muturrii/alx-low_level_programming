@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
+	long int a = 1;
+	long int b = 2;
 	int i;
 
-	printf("%d, %d, ", a, b);
+	printf("%ld, %ld, ", a, b);
 	for (i = 0; i < 47; i++)
 	{
-		printf("%d, ", a + b);
+		printf("%ld, ", a + b);
 		a = a + b;
-		printf("%d, ", a + b);
+		printf("%ld, ", a + b);
 		b = a + b;
 	}
-	printf("%d, ", a + b);
+	printf("%ld, ", a + b);
 	a = a + b;
-	printf("%d\n", a + b);
+	printf("%ld\n", a + b);
 	return (0);
 }
