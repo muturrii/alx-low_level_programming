@@ -5,13 +5,13 @@
  *
  * Return: no return
  */
-void main(void)
+int main(void)
 {
 	int a = 1;
 	int b = 2;
 	int i;
 
-	printf("%d, %d, ", a , b);
+	printf("%d, %d, ", a, b);
 	for (i = 0; i < 47; i++)
 	{
 		printf("%d, ", a + b);
@@ -22,4 +22,5 @@ void main(void)
 	printf("%d, ", a + b);
 	a = a + b;
 	printf("%d\n", a + b);
+	return (0);
 }

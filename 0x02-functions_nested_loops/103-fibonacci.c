@@ -30,4 +30,5 @@ int main(void)
 		if ((a + b) % 2 == 0)
 			total = total + (a + b);
 	}
+	return (0);
 }
