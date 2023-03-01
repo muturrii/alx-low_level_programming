@@ -6,13 +6,13 @@
  * @n: number of values tobe printed
  * Return: no return
  */
-void print_array(char *a, int n)
+void print_array(int *a, int n)
 {
 	int i;
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%c, ", a[i]);
+		printf("%d, ", a[i]);
 	}
 	printf("\n");
 }
