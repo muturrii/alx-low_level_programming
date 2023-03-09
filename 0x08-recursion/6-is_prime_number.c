@@ -7,7 +7,7 @@
  */
 int isprime(int n, int z)
 {
-	if (z > n / 2)
+	if (z > (n / 2) + 1)
 		return (1);
 	if (n == 2 || n == 3)
 		return (0);
@@ -24,5 +24,7 @@ int isprime(int n, int z)
  */
 int is_prime_number(int n)
 {
+	if (n < 2)
+		return (0);
 	return (isprime(n, 2));
 }
