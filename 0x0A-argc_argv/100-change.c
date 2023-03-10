@@ -19,6 +19,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	i = atoi(argv[1]);
+	if (i < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 	temp = i % 25;
 	sum += i / 25;
 	sum += temp / 10;
