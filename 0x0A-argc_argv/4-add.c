@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include <string.h>
 #include <stdlib.h>
 /**
@@ -10,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
+	unsigned int new;
 	int sum = 0;
 
 	if (argc == 1)
@@ -19,7 +21,9 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < argc; i++)
 	{
-		if (strlen(argv[i]) == 0 || atoi(argv[i]) < 1)
+		new = (int) log10(atoi(argv[i])) + 1;
+		if (strlen(argv[i]) == 0 || atoi(argv[i]) < 0
+				|| new != strlen(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
