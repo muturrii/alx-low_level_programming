@@ -7,7 +7,7 @@
 int count(char *str)
 {
 	int i = 0;
-	int total = 1;
+	int total = 0;
 
 	if (str == NULL)
 		return (0);
@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 	int len1 = count(s1);
 	int len2 = count(s2);
 
-	p = malloc(len1 + len2);
+	p = malloc(len1 + len2 + sizeof(char));
 	if (p == NULL)
 		return (NULL);
 	for (i = 0; i < len1; i++)
