@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * create_array - returns the address of an array made
  * @size: size of the array to be made
@@ -13,7 +13,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	p = malloc(sizeof(char) * size);
 	if (p == NULL)
-		return (NULL);		
+		return (NULL);
 	p[0] = c;
 	return (p);
 }
