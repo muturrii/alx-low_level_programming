@@ -2,7 +2,7 @@
 /**
  * wid - helps out alloc_grid
  * @width: width of 2D array
- * Return; returns address of each array
+ * Return: returns address of each array
  */
 int *wid(int width)
 {
@@ -10,6 +10,8 @@ int *wid(int width)
 	int i;
 
 	new = malloc(width * sizeof(int));
+	if (new == NULL)
+		return (NULL);
 	for (i = 0; i < width; i++)
 		new[i] = 0;
 	return (new);
@@ -23,6 +25,7 @@ int *wid(int width)
 int **alloc_grid(int width, int height)
 {
 	int i;
+	int *n;
 	int **p;
 
 	if (width < 1 || height < 1)
@@ -30,7 +33,13 @@ int **alloc_grid(int width, int height)
 	p = malloc(width * height * sizeof(int));
 	if (p == NULL)
 		return (NULL);
+	n = wid(width);
+	if (n == NULL)
+	{
+		free(n);
+		return (NULL);
+	}
 	for (i = 0; i < height; i++)
-		p[i] = wid(width);
+		p[i] = n;
 	return (p);
 }
