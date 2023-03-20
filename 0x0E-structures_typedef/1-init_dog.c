@@ -1,5 +1,4 @@
 #include "main.h"
-#include "dog.h"
 /**
  * init_dog - used to initialize a struct
  * @d: name of the new cluster
