@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 /**
  * print_dog - prints details of a struct
  * @d: holds the address of the struct

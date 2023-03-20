@@ -2,6 +2,14 @@
 #define MAIN_H
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * struct dog - stores details for dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: name of dog owner
+ *
+ * Description: a struct to store dog details
+ */
 typedef struct dog
 {
 	char *name;
