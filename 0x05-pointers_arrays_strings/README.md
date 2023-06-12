@@ -1,3 +1,0 @@
-arrays
-strings
-pointerrrrrrssss
